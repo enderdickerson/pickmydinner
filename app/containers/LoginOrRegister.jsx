@@ -45,7 +45,7 @@ class LoginOrRegister extends Component {
             <a
               className={cx('alternative-link')}
               onClick={toggleLoginMode}
-            >Register an Account</a>
+            > Register</a>
           </div>
         </div>
       );
@@ -91,10 +91,6 @@ class LoginOrRegister extends Component {
                ref="password"
                 placeholder="password"
               />
-              <div className={cx('hint')}>
-                <div>Hint</div>
-                <div>email: example@ninja.com password: ninja</div>
-              </div>
               <p
                 className={cx('message', {
                 'message-show': message && message.length > 0
@@ -104,12 +100,12 @@ class LoginOrRegister extends Component {
                 type="submit"
                 value={isLogin ? 'Login' : 'Register'} />
             </form>
+
           </div>
           <div className={cx('google-container')}>
-            <h1 className={cx('heading')}>Google Login Demo</h1>
-            <a
-              className={cx('button')}
-              href="/auth/google">Login with Google</a>
+          <a
+            className={cx('button')}
+            href="/auth/google">Login with Google</a>
           </div>
         </div>
       </div>
@@ -136,4 +132,3 @@ function mapStateToProps({user}) {
 // It does not modify the component class passed to it
 // Instead, it returns a new, connected component class, for you to use.
 export default connect(mapStateToProps, { manualLogin, signUp, toggleLoginMode })(LoginOrRegister);
-

@@ -17,7 +17,7 @@ class Vote extends Component {
 
   pageMeta = () => {
     return [
-      { name: 'description', content: 'A reactGo example of a voting page' }
+      { name: 'description', content: 'Roulette' }
     ];
   };
 
@@ -35,4 +35,3 @@ class Vote extends Component {
 }
 
 export default Vote;
-

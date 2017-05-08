@@ -17,7 +17,7 @@ class About extends Component {
 
   pageMeta = () => {
     return [
-      { name: 'description', content: 'A reactGo example of life' }
+      { name: 'description', content: 'About pickmydinner' }
     ];
   };
 

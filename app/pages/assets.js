@@ -11,7 +11,7 @@ const metaAssets = () => {
     { charset: 'utf-8' },
     // Meta descriptions are commonly used on search engine result pages to
     // display preview snippets for a given page.
-    { name: 'description', content: 'Your One-Stop solution for a full-stack universal Redux App' },
+    { name: 'description', content: 'Dinner roulette' },
     // Setting IE=edge tells Internet Explorer to use the latest engine to
     //  render the page and execute Javascript
     { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
@@ -50,6 +50,6 @@ const linkAssets = () => {
   ];
 };
 
-export const title = 'reactGo - just ship it';
+export const title = 'pickmydinner';
 export const meta = metaAssets();
 export const link = linkAssets();
