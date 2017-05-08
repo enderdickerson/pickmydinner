@@ -19,6 +19,7 @@ const buildPage = ({ componentHTML, initialState, headAssets }) => {
     ${headAssets.title.toString()}
     ${headAssets.meta.toString()}
     ${headAssets.link.toString()}
+    ${staticAssets.createVerifyTag()}
     ${staticAssets.createStylesheets()}
     ${staticAssets.createTrackingScript()}
   </head>
@@ -36,4 +37,3 @@ export default (store, props) => {
   const headAssets = Helmet.renderStatic();
   return buildPage({ componentHTML, initialState, headAssets });
 };
-
