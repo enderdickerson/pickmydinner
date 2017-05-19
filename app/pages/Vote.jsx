@@ -12,7 +12,7 @@ class Vote extends Component {
   }
 
   pageTitle = () => {
-    return 'Vote | reactGo';
+    return 'Home | PMD';
   };
 
   pageMeta = () => {

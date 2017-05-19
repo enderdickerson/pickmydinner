@@ -10,27 +10,17 @@ export default class TopicTextInput extends Component {
     this.onChange = this.onChange.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
   }
-  /*
-   * Invokes the callback passed in as onSave, allowing this component to be
-   * used in different ways. I personally think this makes it more reusable.
-   */
+
   onSave() {
     const { onEntrySave, value } = this.props;
     onEntrySave(value);
   }
 
-  /*
-   * Invokes the callback passed in as onSave, allowing this component to be
-   * used in different ways. I personally think this makes it more reusable.
-   */
   onChange(event) {
     const { onEntryChange } = this.props;
     onEntryChange(event.target.value);
   }
 
-  /*
-   * @param  {object} event
-   */
   onKeyDown(event) {
     if (event.keyCode === ENTER_KEY_CODE) {
       this.onSave();
